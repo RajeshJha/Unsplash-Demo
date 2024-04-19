@@ -16,6 +16,11 @@
 		62323B172BD18E1400AD6CE6 /* Demo_App_UnsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B162BD18E1400AD6CE6 /* Demo_App_UnsplashTests.swift */; };
 		62323B212BD18E1500AD6CE6 /* Demo_App_UnsplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B202BD18E1500AD6CE6 /* Demo_App_UnsplashUITests.swift */; };
 		62323B232BD18E1500AD6CE6 /* Demo_App_UnsplashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B222BD18E1500AD6CE6 /* Demo_App_UnsplashUITestsLaunchTests.swift */; };
+		62323B312BD18F1500AD6CE6 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B302BD18F1500AD6CE6 /* PhotoView.swift */; };
+		62323B352BD1904C00AD6CE6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B342BD1904C00AD6CE6 /* CollectionViewCell.swift */; };
+		62323B372BD1906A00AD6CE6 /* MyImagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B362BD1906900AD6CE6 /* MyImagView.swift */; };
+		62323B3A2BD1925E00AD6CE6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 62323B392BD1925E00AD6CE6 /* SnapKit */; };
+		62323B3D2BD192B200AD6CE6 /* UnsplashModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62323B3C2BD192B200AD6CE6 /* UnsplashModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,10 @@
 		62323B1C2BD18E1500AD6CE6 /* Demo-App-UnsplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo-App-UnsplashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		62323B202BD18E1500AD6CE6 /* Demo_App_UnsplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_App_UnsplashUITests.swift; sourceTree = "<group>"; };
 		62323B222BD18E1500AD6CE6 /* Demo_App_UnsplashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_App_UnsplashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		62323B302BD18F1500AD6CE6 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		62323B342BD1904C00AD6CE6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		62323B362BD1906900AD6CE6 /* MyImagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImagView.swift; sourceTree = "<group>"; };
+		62323B3C2BD192B200AD6CE6 /* UnsplashModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62323B3A2BD1925E00AD6CE6 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				62323B152BD18E1400AD6CE6 /* Demo-App-UnsplashTests */,
 				62323B1F2BD18E1500AD6CE6 /* Demo-App-UnsplashUITests */,
 				62323AFD2BD18E0C00AD6CE6 /* Products */,
+				62323B382BD1925E00AD6CE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +110,9 @@
 		62323AFE2BD18E0C00AD6CE6 /* Demo-App-Unsplash */ = {
 			isa = PBXGroup;
 			children = (
+				62323B3B2BD192B200AD6CE6 /* Model */,
+				62323B332BD1904100AD6CE6 /* Cell */,
+				62323B2F2BD18EBC00AD6CE6 /* View */,
 				62323AFF2BD18E0C00AD6CE6 /* AppDelegate.swift */,
 				62323B012BD18E0C00AD6CE6 /* SceneDelegate.swift */,
 				62323B032BD18E0C00AD6CE6 /* ViewController.swift */,
@@ -127,6 +141,38 @@
 			path = "Demo-App-UnsplashUITests";
 			sourceTree = "<group>";
 		};
+		62323B2F2BD18EBC00AD6CE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62323B362BD1906900AD6CE6 /* MyImagView.swift */,
+				62323B302BD18F1500AD6CE6 /* PhotoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62323B332BD1904100AD6CE6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				62323B342BD1904C00AD6CE6 /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		62323B382BD1925E00AD6CE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62323B3B2BD192B200AD6CE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62323B3C2BD192B200AD6CE6 /* UnsplashModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +189,9 @@
 			dependencies = (
 			);
 			name = "Demo-App-Unsplash";
+			packageProductDependencies = (
+				62323B392BD1925E00AD6CE6 /* SnapKit */,
+			);
 			productName = "Demo-App-Unsplash";
 			productReference = 62323AFC2BD18E0C00AD6CE6 /* Demo-App-Unsplash.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 62323AF32BD18E0C00AD6CE6;
+			packageReferences = (
+				62323B322BD18FDD00AD6CE6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 62323AFD2BD18E0C00AD6CE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62323B3D2BD192B200AD6CE6 /* UnsplashModel.swift in Sources */,
+				62323B372BD1906A00AD6CE6 /* MyImagView.swift in Sources */,
+				62323B352BD1904C00AD6CE6 /* CollectionViewCell.swift in Sources */,
 				62323B042BD18E0C00AD6CE6 /* ViewController.swift in Sources */,
 				62323B002BD18E0C00AD6CE6 /* AppDelegate.swift in Sources */,
 				62323B022BD18E0C00AD6CE6 /* SceneDelegate.swift in Sources */,
+				62323B312BD18F1500AD6CE6 /* PhotoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +657,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		62323B322BD18FDD00AD6CE6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		62323B392BD1925E00AD6CE6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 62323B322BD18FDD00AD6CE6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 62323AF42BD18E0C00AD6CE6 /* Project object */;
 }
